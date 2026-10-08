@@ -1,0 +1,49 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Rust
+target/
+**/*.rs.bk
+
+# Node / Tauri
+node_modules/
+dist/
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/.cxx/
+android/captures/
+android/local.properties
+*.iml
+*.apk
+*.aab
+.idea/
+
+# iOS / Swift
+ios/build/
+ios/**/xcuserdata/
+*.xcuserstate
+DerivedData/
+.build/
+.swiftpm/
+Pods/
+
+# OBS plugin
+obs-plugin/build*/
+
+# Segredos
+.env
+*.keystore
+*.jks

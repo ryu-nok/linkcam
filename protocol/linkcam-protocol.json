@@ -1,0 +1,57 @@
+{
+  "$comment": "Fonte única das constantes do protocolo LinkCam. Gere constantes em Kotlin/Rust/Swift a partir deste arquivo. Documentação completa: docs/PROTOCOLO.md",
+  "protocolVersion": 1,
+  "defaultPort": 47100,
+  "mdnsServiceType": "_linkcam._tcp.local.",
+  "headerSize": 6,
+  "maxPayloadBytes": 8388608,
+  "pingIntervalMs": 1000,
+  "keyframeIntervalSec": 2,
+  "messageTypes": {
+    "HELLO": 1,
+    "CAPS": 2,
+    "AUTH": 3,
+    "SET_CONFIG": 16,
+    "SET_ZOOM": 17,
+    "SET_FOCUS": 18,
+    "SET_EXPOSURE": 19,
+    "SWITCH_CAMERA": 20,
+    "SET_TORCH": 21,
+    "REQUEST_KEYFRAME": 22,
+    "STATE": 32,
+    "ERROR": 33,
+    "PING": 48,
+    "PONG": 49,
+    "VIDEO_CONFIG": 64,
+    "VIDEO_FRAME": 65,
+    "AUDIO_CONFIG": 80,
+    "AUDIO_FRAME": 81,
+    "BYE": 255
+  },
+  "flags": {
+    "KEYFRAME": 1
+  },
+  "codecs": {
+    "H264": 1
+  },
+  "errorCodes": [
+    "version_mismatch",
+    "not_authorized",
+    "camera_busy",
+    "unsupported_config",
+    "encoder_failed",
+    "internal"
+  ],
+  "bitratePresetsKbps": {
+    "720p30": 4000,
+    "720p60": 6000,
+    "1080p30": 8000,
+    "1080p60": 12000
+  },
+  "latencyQuality": [
+    { "maxMs": 50, "label": "Excelente" },
+    { "maxMs": 120, "label": "Boa" },
+    { "maxMs": 250, "label": "Instável" },
+    { "maxMs": null, "label": "Ruim" }
+  ]
+}
