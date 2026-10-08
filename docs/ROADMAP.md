@@ -11,7 +11,7 @@ A ordem foi pensada para ter um produto usável o quanto antes: ao fim da **fase
 Preparar o terreno para as outras fases andarem rápido.
 
 - [x] Instalar ferramentas no PC: Git, Rust (rustup), Node.js LTS, Android Studio, FFmpeg, OBS Studio
-- [ ] Criar repositório git e primeiro commit com esta estrutura
+- [x] Criar repositório git e primeiro commit com esta estrutura
 - [ ] `protocol/`: gerar constantes em Rust e Kotlin a partir de `linkcam-protocol.json`
 - [ ] **Simulador de celular** (`tools/fake-phone/`): programa em Rust que se comporta como o app do celular, mandando um vídeo de teste (barras coloridas + relógio) pelo protocolo. Permite construir o app do PC sem depender do celular
 - [x] Ligar a "Depuração USB" no celular de teste e confirmar `adb devices`
